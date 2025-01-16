@@ -2,9 +2,6 @@
 
 A voxel-based game inspired by Minecraft, built using Three.js and modern JavaScript.
 
-## Author
-TT
-
 ## Features
 
 - Voxel-based world generation
