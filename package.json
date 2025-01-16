@@ -1,0 +1,59 @@
+{
+  "name": "minecraft-threejs-clone",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A modern Minecraft clone built with Three.js",
+  "author": "TT",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "clean": "rimraf dist",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --write \"**/*.{js,json,css,md}\"",
+    "build:prod": "npm run clean && npm run build"
+  },
+  "dependencies": {
+    "three": "^0.156.1"
+  },
+  "devDependencies": {
+    "vite": "^4.4.5",
+    "eslint": "^8.45.0",
+    "prettier": "^3.0.0",
+    "rimraf": "^5.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=7.0.0"
+  },
+  "keywords": [
+    "minecraft",
+    "threejs",
+    "game",
+    "voxel",
+    "webgl",
+    "3d"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TT/minecraft-threejs-clone"
+  },
+  "bugs": {
+    "url": "https://github.com/TT/minecraft-threejs-clone/issues"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

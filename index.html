@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/textures/grass.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MinecraftJS - Modern Voxel Game</title>
+    <meta name="description" content="A modern Minecraft clone built with Three.js">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="app"></div>
+    
+    <!-- Player Info Panel -->
+    <div id="info">
+        <div id="info-player-position"></div>
+    </div>
+
+    <!-- Game Toolbar -->
+    <div id="toolbar-container">
+        <div id="toolbar">
+            <img class="toolbar-icon selected" id="toolbar-0" src="textures/pickaxe.png" alt="Pickaxe" title="Pickaxe (0)">
+            <img class="toolbar-icon" id="toolbar-1" src="textures/grass.png" alt="Grass" title="Grass Block (1)">
+            <img class="toolbar-icon" id="toolbar-2" src="textures/dirt.png" alt="Dirt" title="Dirt Block (2)">
+            <img class="toolbar-icon" id="toolbar-3" src="textures/stone.png" alt="Stone" title="Stone Block (3)">
+            <img class="toolbar-icon" id="toolbar-4" src="textures/coal_ore.png" alt="Coal Ore" title="Coal Ore (4)">
+            <img class="toolbar-icon" id="toolbar-5" src="textures/iron_ore.png" alt="Iron Ore" title="Iron Ore (5)">
+            <img class="toolbar-icon" id="toolbar-6" src="textures/tree_top.png" alt="Wood" title="Wood Block (6)">
+            <img class="toolbar-icon" id="toolbar-7" src="textures/leaves.png" alt="Leaves" title="Leaves Block (7)">
+            <img class="toolbar-icon" id="toolbar-8" src="textures/sand.png" alt="Sand" title="Sand Block (8)">
+        </div>
+    </div>
+
+    <!-- Game Overlay -->
+    <div id="overlay">
+        <div id="instructions">
+            <h1>MinecraftJS</h1>
+            <div class="controls">
+                <div class="control-group">
+                    <span class="key">WASD</span> - Move<br>
+                    <span class="key">SHIFT</span> - Sprint<br>
+                    <span class="key">SPACE</span> - Jump<br>
+                    <span class="key">R</span> - Reset Camera
+                </div>
+                <div class="control-group">
+                    <span class="key">U</span> - Toggle UI<br>
+                    <span class="key">0</span> - Pickaxe<br>
+                    <span class="key">1-8</span> - Select Block<br>
+                </div>
+                <div class="control-group">
+                    <span class="key">F1</span> - Save Game<br>
+                    <span class="key">F2</span> - Load Game<br>
+                    <span class="key">F10</span> - Debug Camera
+                </div>
+            </div>
+            <h2>PRESS ANY KEY TO START</h2>
+        </div>
+    </div>
+
+    <!-- Status Message -->
+    <div id="status"></div>
+
+    <!-- Game Scripts -->
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
